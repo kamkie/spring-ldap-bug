@@ -20,7 +20,7 @@ public class SpringLdapBugApplicationTests {
     private LdapEmployeeRepository ldapEmployeeRepository;
 
     @Test
-    public void contextLoads() {
+    public void useLdapRepository() {
         assertThat(ldapEmployeeRepository.findAllLdapEmployees())
                 .hasSize(6);
     }
