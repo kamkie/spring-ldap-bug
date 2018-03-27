@@ -1,0 +1,111 @@
+dn: dc=company,dc=pl
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: company
+o: company Sp. z o.o.
+
+dn: ou=users,dc=company,dc=pl
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=ldap_groups,dc=company,dc=pl
+objectClass: top
+objectClass: organizationalUnit
+ou: ldap_groups
+
+dn: uid=emplname1.emplsurname1,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname1 emplsurname1
+givenName: emplname1
+sn: emplsurname1
+displayName: emplname1 emplsurname1
+uid: emplname1.emplsurname1
+o: company Sp. z o.o.
+mail: emplname1.emplsurname1@company.pl
+gidNumber: 0
+uidNumber: 123
+userPassword: password
+
+dn: uid=emplname2.emplsurname2,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname2 emplsurname2
+givenName: emplname2
+sn: emplsurname2
+displayName: emplname2 emplsurname2
+uid: emplname2.emplsurname2
+o: company Sp. z o.o.
+mail: emplname2.emplsurname2@company.pl
+gidNumber: 0
+uidNumber: 1234
+
+dn: uid=emplname3.emplsurname3,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname3 emplsurname3
+givenName: emplname3
+sn: emplsurname3
+displayName: emplname3 emplsurname3
+uid: emplname3.emplsurname3
+o: company Sp. z o.o.
+mail: emplname3.emplsurname3@company.pl
+gidNumber: 0
+uidNumber: 12345
+
+dn: uid=emplname4.emplsurname4,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname4 emplsurname4
+givenName: emplname4
+sn: emplsurname4
+displayName: emplname4 emplsurname4
+uid: emplname4.emplsurname4
+o: company Sp. z o.o.
+mail: emplname4.emplsurname4@company.pl
+gidNumber: 0
+uidNumber: 87700051
+
+dn: uid=emplname5.emplsurname5,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname5 emplsurname5
+givenName: emplname5
+sn: emplsurname5
+displayName: emplname5 emplsurname5
+uid: emplname5.emplsurname5
+o: company Sp. z o.o.
+mail: emplname5.emplsurname5@company.pl
+gidNumber: 0
+uidNumber: 87700057
+
+dn: uid=emplname6.emplsurname6,ou=users,dc=company,dc=pl
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: emplname6 emplsurname6
+givenName: emplname6
+sn: emplsurname6
+displayName: emplname6 emplsurname6
+uid: emplname6.emplsurname6
+o: company Sp. z o.o.
+mail: emplname6.emplsurname6@company.pl
+gidNumber: 0
+uidNumber: 87700054
+
+dn: cn=employees,ou=ldap_groups,dc=company,dc=pl
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: employees
+uniqueMember: uid=emplname1.emplsurname1,ou=users,dc=company,dc=pl
+uniqueMember: uid=emplname2.emplsurname2,ou=users,dc=company,dc=pl
+uniqueMember: uid=emplname3.emplsurname3,ou=users,dc=company,dc=pl
+uniqueMember: uid=emplname4.emplsurname4,ou=users,dc=company,dc=pl
+uniqueMember: uid=emplname5.emplsurname5,ou=users,dc=company,dc=pl
+uniqueMember: uid=emplname6.emplsurname6,ou=users,dc=company,dc=pl
